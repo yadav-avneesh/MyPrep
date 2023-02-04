@@ -2,7 +2,7 @@
 * Coding
 * LLD
 * HLD
-* Basic questions
+* Behavirol
 
 ### Timelines
 * 2 Weeks until interview;
@@ -14,5 +14,3 @@
     * HLD - Core concepts, Databses, LB, CDN, Caching, Estimation, Async, MQ, Streaming
     * HLD 1-2 questions daily;
     * Machine code - Code few problems like, black-jack, chess, parkingLot
-
- 
