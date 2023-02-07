@@ -40,7 +40,7 @@
 - [Distributed Systems](https://www.youtube.com/playlist?list=PLNPUF5QyWU8O0Wd8QDh9KaM1ggsxspJ31)
 - [HLD & LLD](https://www.youtube.com/@ThinkSoftware)
 - [GOTO Conf -- general talk of design](https://www.youtube.com/watch?v=hev65ozmYPI)
-- [Backend Guy](https://www.youtube.com/c/HusseinNasser-software-engineering)
+- [Backend Guy -- Nassir](https://www.youtube.com/c/HusseinNasser-software-engineering)
 - [CS 50](https://www.youtube.com/watch?v=-W9F__D3oY4)
 - [Basics of Sys Design -- Liked it](https://www.youtube.com/watch?v=MbjObHmDbZo)
 - [Which db to use](https://www.youtube.com/watch?v=leGv3PIaCn4)
