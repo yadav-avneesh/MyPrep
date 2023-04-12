@@ -15,7 +15,6 @@
 - [Kenny's List extended](https://www.reddit.com/r/csMajors/comments/pu9tyk/comment/he5g00d/?context=3)
 
 
-
 ## Python
 - [Helpful Syntax](https://towardsdatascience.com/19-helpful-python-syntax-patterns-for-coding-interviews-3704c15b758f)
 
@@ -32,6 +31,10 @@
 - https://www.youtube.com/watch?v=cpgAULF6Vpw&list=PL7g1jYj15RUOjoeZAJsWjwV8XUo9r0hwc
 - https://github.com/dennyzhang/cheatsheet-python-A4
 
+## Repo
+- [Company Code Problem](https://github.com/xizhengszhang/Leetcode_company_frequency)
+- [Neetcode LC](https://github.com/neetcode-gh/leetcode/blob/main/python/)
+
 # Notes
 
 ## Coding notes
@@ -46,6 +49,47 @@
 - Sometime its better to work on indices than actual values; Specially for
   arrays ---: Tree (from in and post, k closest to X in sorted array)
 - [Prefix code - Wikipedia](https://en.wikipedia.org/wiki/Prefix_code)
+- Backtrack DFS ---> mark as visited then dfs, then unmark on completion -- backtrack;
+```python
+class Solution:
+    def exist(self, board: List[List[str]], word: str) -> bool:
+        ROWS, COLS = len(board), len(board[0])
+        path = set()
+
+        def dfs(r, c, i):
+            if i == len(word):
+                return True
+            if (
+                min(r, c) < 0
+                or r >= ROWS
+                or c >= COLS
+                or word[i] != board[r][c]
+                or (r, c) in path
+            ):
+                return False
+            path.add((r, c))
+            res = (
+                dfs(r + 1, c, i + 1)
+                or dfs(r - 1, c, i + 1)
+                or dfs(r, c + 1, i + 1)
+                or dfs(r, c - 1, i + 1)
+            )
+            path.remove((r, c))
+            return res
+
+        # To prevent TLE,reverse the word if frequency of the first letter is more than the last letter's
+        count = defaultdict(int, sum(map(Counter, board), Counter()))
+        if count[word[0]] > count[word[-1]]:
+            word = word[::-1]
+
+        for r in range(ROWS):
+            for c in range(COLS):
+                if dfs(r, c, 0):
+                    return True
+        return False
+
+    # O(n * m * 4^n)
+```
 
 
 ## Random in Python
