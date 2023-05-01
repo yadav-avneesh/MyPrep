@@ -24,12 +24,13 @@
 - [Capacity Planning](https://www.dballona.com/en/system-design-capacity-planning-basics)
 
 ## Github
-- https://github.com/shashank88/system_design
-- https://github.com/checkcheckzz/system-design-interview
-- https://github.com/donnemartin/system-design-primer
-- https://github.com/madd86/awesome-system-design
+- [Shanky](https://github.com/shashank88/system_design)
+- [Interview Prep](https://github.com/checkcheckzz/system-design-interview)
+- [Primer](https://github.com/donnemartin/system-design-primer)
+- [Sys D references](https://github.com/madd86/awesome-system-design)
 - [System Design Cheat sheet](https://gist.github.com/vasanthk/485d1c25737e8e72759f)
 - [Convert Notes to gitbook - sample](https://keyvanakbary.github.io/learning-notes/papers/)
+- [Do yourself](https://github.com/talent-plan)
 
 
 ## Youtube
