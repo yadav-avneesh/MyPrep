@@ -23,6 +23,7 @@
 - [Techie Delight](https://www.techiedelight.com/Category/Dynamic-Programming/)
 - [CP-algorithms](https://cp-algorithms.com/)
 - [The algorist](https://www.thealgorists.com/)
+- [FANG DSA](https://leetcode.com/discuss/interview-question/3365796/all-in-one-place-to-faang)
 
 ## Code Patterns
 - https://seanprashad.com/leetcode-patterns/
