@@ -1,14 +1,19 @@
 # Links
 
+- Pass
+
 ## Articlese
+
 - [Huffman Encoding](https://www.techiedelight.com/huffman-coding/)
 
 ## Youtube
+
 - [William - Graph](https://www.youtube.com/watch?v=09_LlHjoEiY)
 - [Algorithms](https://www.youtube.com/watch?v=8hly31xKli0)
 
 
 ## Questions
+
 - [Coding Questions LC](https://leetcode.com/discuss/interview-question/2069641/The-Only-Lists-You-Need-For-Your-Interview-Preparation/1406307)
 - [Kenny's List](https://www.reddit.com/r/csMajors/comments/pu9tyk/kenny_talks_code_list_of_leetcode_problems/)
 - [Kenny's List 1](https://archive.ph/kMKcB)
@@ -16,10 +21,12 @@
 
 
 ## Python
+
 - [Helpful Syntax](https://towardsdatascience.com/19-helpful-python-syntax-patterns-for-coding-interviews-3704c15b758f)
 
 
 ## Blogs
+
 - [Techie Delight](https://www.techiedelight.com/Category/Dynamic-Programming/)
 - [CP-algorithms](https://cp-algorithms.com/)
 - [The algorist](https://www.thealgorists.com/)
@@ -27,6 +34,7 @@
 - [GFG](https://www.geeksforgeeks.org/fundamentals-of-algorithms/)
 
 ## Code Patterns
+
 - https://seanprashad.com/leetcode-patterns/
 - https://hackernoon.com/14-patterns-to-ace-any-coding-interview-question-c5bb3357f6ed
 - https://www.educative.io/courses/grokking-coding-interview-patterns-python
@@ -34,12 +42,17 @@
 - https://github.com/dennyzhang/cheatsheet-python-A4
 
 ## Repo
+
 - [Company Code Problem](https://github.com/xizhengszhang/Leetcode_company_frequency)
 - [Neetcode LC](https://github.com/neetcode-gh/leetcode/blob/main/python/)
+- [LC Solutions](https://walkccc.me/LeetCode/problems/0837/)
 
 # Notes
 
+- Pass
+
 ## Coding notes
+
 - Practice back-tracking & DP questions ---> weak areas for me; Revise notes;
 - while loop ---> always check for counter increase;
 - LL or Tree problem; For corner cases, check if adding placeholder empty nodes
@@ -52,6 +65,7 @@
   arrays ---: Tree (from in and post, k closest to X in sorted array)
 - [Prefix code - Wikipedia](https://en.wikipedia.org/wiki/Prefix_code)
 - Backtrack DFS ---> mark as visited then dfs, then unmark on completion -- backtrack;
+
 ```python
 class Solution:
     def exist(self, board: List[List[str]], word: str) -> bool:
