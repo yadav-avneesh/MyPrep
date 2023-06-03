@@ -1,3 +1,75 @@
+# Learnings
+
+## Coding
+
+### General
+- Increment while loop
+- Check corner cases
+
+### Graph
+- Check if all nodes covered.
+  - [Valid Tree Problem](https://leetcode.com/problems/graph-valid-tree/)
+  - Recall that a graph, G, is a tree iff the following two conditions are met:
+    - G is fully connected. In other words, for every pair of nodes in G, there
+      is a path between them. => [len(edges) == n-1]
+    - G contains no cycles. In other words, there is exactly one path between
+      each pair of nodes in G.
+   - Approaches
+     - DFS --> To find connectivity and check for cycle by keeping track of
+       visited.
+     - Can use BFS too
+     - Union Find
+
+### String encoding
+- len of str to bytes (number of bytes = 4 in this case)
+```python
+    def len_to_str(x):
+        """
+        Encodes length of string to 4-bytes string
+        """
+        x = len(x)
+        bytes = [chr(x >> (i * 8) & 0xff) for i in range(4)]
+        bytes.reverse()
+        bytes_str = ''.join(bytes)
+        return bytes_str
+```
+
+- Understanding bytes = [chr(x >> (i * 8) & 0xff) for i in range(4)] all you
+  need to do is encode the length of x into 4 bytes
+  - why 4 bytes - integer size - 4 bytes = [8bits, 8bits, 8bits, 8bits]
+- ok so how do you get a X(length of str) total size into chunks of 8 bits ?
+  - >> is right shift
+    - which means if you have 101111 >> 2
+      - this right shift moves 101111, 2 times to the right - which becomes 1011
+  - if you go to python terminal and type 0xff you get 8 1's which represents
+    11111111 = a BYTE
+  - if you AND(&) any number with 0xff = it gives you the right most 8 bits of
+    the number, example:
+    - bin(291) (binary of 291) is '0b100100011'
+    - oxff binary is '0b11111111'
+    - now if you 291 & 0xff = you get last 8 bits of 291 == 00100011
+- If you understand this - you understood the solution.
+
+Now as explained in the 2 point. The python solution line 6 we take the whole
+length of the string (len(str)) - we have to encode that into
+[8bits, 8 bits, 8bits, 8bits] example:
+- lets say our total length is 291 ( in binary its bin(291) = '0b100100011')
+- what you have to do now ? we grab the right most 8 bits - how do you grab
+  right most 8 bits ?
+  - as mentioned above you do 291 & 0xff = you get last 8 bits
+- Now you already have right most 8 bits - in next iteration you are interested
+  in NEXT 8 bits - how do you get that ?
+  - we move 291 >> 8 ( which removes the last 8 bits we already computed)
+    - which means if you do (291 >> 8 ) & 0xff = it gives you the next right
+      most 8 bits
+- As already mentioned we need 4 chunks of 8 bits [8bits, 8bits, 8bits, 8bits]
+  - [ for i in range(4)] thats why the range is 4 ( 0, 1, 2, 3)
+- Once you compute all the 8bits we need to convert to char hence its
+  [chr((x >> (i * 8)) & 0xff) for i in range(4)]
+
+
+
+# Tricks
 ## Math Ones
 
 ### GCD
