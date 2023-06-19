@@ -3,10 +3,12 @@
 ## Coding
 
 ### General
+
 - Increment while loop
 - Check corner cases
 
 ### Graph
+
 - Check if all nodes covered.
   - [Valid Tree Problem](https://leetcode.com/problems/graph-valid-tree/)
   - Recall that a graph, G, is a tree iff the following two conditions are met:
@@ -14,14 +16,16 @@
       is a path between them. => [len(edges) == n-1]
     - G contains no cycles. In other words, there is exactly one path between
       each pair of nodes in G.
-   - Approaches
-     - DFS --> To find connectivity and check for cycle by keeping track of
+    - Approaches
+      - DFS --> To find connectivity and check for cycle by keeping track of
        visited.
-     - Can use BFS too
-     - Union Find
+      - Can use BFS too
+      - Union Find
 
 ### String encoding
+
 - len of str to bytes (number of bytes = 4 in this case)
+
 ```python
     def len_to_str(x):
         """
@@ -53,6 +57,7 @@
 Now as explained in the 2 point. The python solution line 6 we take the whole
 length of the string (len(str)) - we have to encode that into
 [8bits, 8 bits, 8bits, 8bits] example:
+
 - lets say our total length is 291 ( in binary its bin(291) = '0b100100011')
 - what you have to do now ? we grab the right most 8 bits - how do you grab
   right most 8 bits ?
@@ -70,13 +75,16 @@ length of the string (len(str)) - we have to encode that into
 
 
 # Tricks
+
 ## Math Ones
+
 
 ### GCD
 
 #### Euclidean Algorithm
 
 ##### What?
+
 - If we subtract a smaller number from a larger one (we reduce a larger number),
 GCD doesn’t change. So if we keep subtracting repeatedly the larger of two, we
 end up with GCD.
@@ -84,6 +92,7 @@ end up with GCD.
     when we find the remainder 0.
 
 ##### Code
+
 ```python
 # TC = O(log(min(a, b)))
 def gcd(x, y):
@@ -95,10 +104,12 @@ def gcd(x, y):
 #### Extended Euclidean Algorightm:
 
 ##### What?
+
 Extended Euclidean algorithm also finds integer coefficients x and y such
 that: ax + by = gcd(a, b)
 
 Examples:
+
 - Input: a = 30, b = 20
   - Output: gcd = 10, x = 1, y = -1
   - (Note that 30*1 + 20*(-1) = 10)
