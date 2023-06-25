@@ -21,6 +21,11 @@
        visited.
       - Can use BFS too
       - Union Find
+- Tree
+  - Depth / Height => Use one over the other as per problem
+- [Euler Tour](https://www.geeksforgeeks.org/euler-tour-tree/)
+  - Useful for subtree range queries.
+
 
 ### String encoding
 
@@ -72,13 +77,6 @@ length of the string (len(str)) - we have to encode that into
 - Once you compute all the 8bits we need to convert to char hence its
   [chr((x >> (i * 8)) & 0xff) for i in range(4)]
 
-
-
-# Tricks
-
-## Math Ones
-
-
 ### GCD
 
 #### Euclidean Algorithm
@@ -103,7 +101,7 @@ def gcd(x, y):
 
 #### Extended Euclidean Algorightm:
 
-##### What?
+##### What of Extended Eu Algo?
 
 Extended Euclidean algorithm also finds integer coefficients x and y such
 that: ax + by = gcd(a, b)
@@ -155,7 +153,8 @@ x = y1 – ⌊b/a⌋ * x1
 y = x1
 ```
 
-##### Code
+##### Code for extended Eu Algo
+
 ```python
 # TC = O(logN)
 
@@ -182,6 +181,7 @@ print("gcd(", a, ",", b, ") = ", g)
 ```
 
 ##### Application
+
 The extended Euclidean algorithm is particularly useful when a and b are coprime
 (or gcd is 1). Since x is the modular multiplicative inverse of “a modulo b”,
 and y is the modular multiplicative inverse of “b modulo a”. In particular, the
@@ -201,6 +201,7 @@ order, that k objects can be chosen from among n objects more formally, the
 number of k-element subsets (or k-combinations) of a n-element set.
 
 ##### The Problem
+
 Write a function that takes two parameters n and k and returns the value of
 Binomial Coefficient C(n, k). For example, your function should return 6 for
 n = 4 and k = 2, and it should return 10 for n = 5 and k = 2.
