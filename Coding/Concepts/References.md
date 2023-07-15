@@ -11,7 +11,6 @@
 - [William - Graph](https://www.youtube.com/watch?v=09_LlHjoEiY)
 - [Algorithms](https://www.youtube.com/watch?v=8hly31xKli0)
 
-
 ## Questions
 
 - [Coding Questions LC](https://leetcode.com/discuss/interview-question/2069641/The-Only-Lists-You-Need-For-Your-Interview-Preparation/1406307)
@@ -19,11 +18,9 @@
 - [Kenny's List 1](https://archive.ph/kMKcB)
 - [Kenny's List extended](https://www.reddit.com/r/csMajors/comments/pu9tyk/comment/he5g00d/?context=3)
 
-
 ## Python
 
 - [Helpful Syntax](https://towardsdatascience.com/19-helpful-python-syntax-patterns-for-coding-interviews-3704c15b758f)
-
 
 ## Blogs
 
@@ -35,11 +32,11 @@
 
 ## Code Patterns
 
-- https://seanprashad.com/leetcode-patterns/
-- https://hackernoon.com/14-patterns-to-ace-any-coding-interview-question-c5bb3357f6ed
-- https://www.educative.io/courses/grokking-coding-interview-patterns-python
-- https://www.youtube.com/watch?v=cpgAULF6Vpw&list=PL7g1jYj15RUOjoeZAJsWjwV8XUo9r0hwc
-- https://github.com/dennyzhang/cheatsheet-python-A4
+- <https://seanprashad.com/leetcode-patterns/>
+- <https://hackernoon.com/14-patterns-to-ace-any-coding-interview-question-c5bb3357f6ed>
+- <https://www.educative.io/courses/grokking-coding-interview-patterns-python>
+- <https://www.youtube.com/watch?v=cpgAULF6Vpw&list=PL7g1jYj15RUOjoeZAJsWjwV8XUo9r0hwc>
+- <https://github.com/dennyzhang/cheatsheet-python-A4>
 
 ## Repo
 
@@ -47,9 +44,11 @@
 - [Neetcode LC](https://github.com/neetcode-gh/leetcode/blob/main/python/)
 - [LC Solutions](https://walkccc.me/LeetCode/problems/0837/)
 
-# Notes
+# DP-Problem-Patterns
 
-- Pass
+- [Patterns](https://leetcode.com/discuss/general-discussion/458695/Dynamic-Programming-Patterns)
+- [Categorization](https://leetcode.com/discuss/general-discussion/1000929/solved-all-dynamic-programming-dp-problems-in-7-months)
+- [Problems and Patterns](https://leetcode.com/discuss/general-discussion/662866/DP-for-Beginners-Problems-or-Patterns-or-Sample-Solutions)
 
 ## Coding notes
 
@@ -107,14 +106,15 @@ class Solution:
     # O(n * m * 4^n)
 ```
 
-
 ## Random in Python
+
 ```python
 from random import random
 x = random.choice(iterable) # --> gives a random value from iterable.
 ```
 
 ## Collection in Python
+
 ```python
 from collections import Counter ---> pretty helpful
 s = "asasasasafddfsf"
@@ -123,9 +123,10 @@ y = x.most_common(n) # --> gives char_freq_map of n elements in most to least co
 ```
 
 ## Priority Queue (heap)
+
 - From heapq import heappify, heappush, heappop ---> good for heap, PQ
 - Default is min, to get max for PQ --> or heap, add invert values, multiply by -1
-- There is also a threadsafe version ---> https://pythonguides.com/priority-queue-in-python/
+- There is also a threadsafe version ---> <https://pythonguides.com/priority-queue-in-python/>
 - NOTE: If using heapq as PQ then put only (primitive_int, primitive_key),
   putting obj directly as second argument leads to error in heapq; why?
   may be because in case priorities are same then it'll compare second argument,
@@ -134,12 +135,14 @@ y = x.most_common(n) # --> gives char_freq_map of n elements in most to least co
 -
 
 ## For char mapping
+
 ```python
 ord(char) - ord('a') # ==> number from 0 to 25 --> char array index
 chr(ord('a')+n) # ==> a character that maps n (n is between 0 to 25 or a to z, small case)
 ```
 
 ## Str - uppler/lower other bitwise
+
 ```python
 # Bitwise & with '_' or 95 ascii code will convert alphabets to upper case
 chr(ord('a') & 95) ---> 'A'
@@ -154,6 +157,7 @@ str.rfind(x)
 # ---> first index of left most occurrence of x
 str.find(x)
 ```
+
 - The ASCII table is constructed in such way that the binary representation of
   lowercase letters is almost identical of binary representation of uppercase
   letters. Character ‘A’ is integer 65 = (0100 0001)2, while character ‘a’ is
@@ -166,6 +170,7 @@ str.find(x)
 - str.isalnum() ---> True if alphanumeric
 
 ## Binary search
+
 ```python
 from bisect import bisect, bisect_left, bisect_right
 #---> right most index for inserting 3 into arr (bisect_right)
@@ -174,6 +179,7 @@ x = bisect([1,2,3,4,5], x=3, low=0, high=arr_len-1)
 ```
 
 ## Deque
+
 ```python
 from collections import deque # (for head-tail operations in O(1))
 x = deque([])
@@ -186,6 +192,7 @@ x.extendleft
 ```
 
 ## Comparator function
+
 ```python
 def cmp_func(x, y):
     if x > y:
@@ -217,30 +224,31 @@ print(sorted(l2, key=cmp_to_key(my_cmp)))
 ```
 
 ## Some tricks
+
 - If input array is sorted then
-    - Binary search
-    - Two pointers
+  - Binary search
+  - Two pointers
 
 - If asked for all permutations/subsets then
-    - Backtracking
+  - Backtracking
 
 - If given a tree then
-    - DFS
-    - BFS
+  - DFS
+  - BFS
 
 - If given a graph then
-    - DFS
-    - BFS
+  - DFS
+  - BFS
 
 - If given a linked list then
-    - Two pointers
+  - Two pointers
 
 - If recursion is banned then
-    - Stack
+  - Stack
 
 - If must solve in-place then
-    - Swap corresponding values
-    - Store one or more different values in the same pointer
+  - Swap corresponding values
+  - Store one or more different values in the same pointer
 
 - If asked for maximum/minimum subarray/subset/options then
   - Dynamic programming
