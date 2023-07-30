@@ -43,6 +43,8 @@
 - [Company Code Problem](https://github.com/xizhengszhang/Leetcode_company_frequency)
 - [Neetcode LC](https://github.com/neetcode-gh/leetcode/blob/main/python/)
 - [LC Solutions](https://walkccc.me/LeetCode/problems/0837/)
+- [LC Google Solutions](https://libaoj.in/LeetCode-Solutions/Google/)
+- [LC Coder - 1](https://leetcode.com/zlobspb/)
 
 # DP-Problem-Patterns
 
