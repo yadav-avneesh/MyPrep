@@ -26,7 +26,6 @@
 - [Euler Tour](https://www.geeksforgeeks.org/euler-tour-tree/)
   - Useful for subtree range queries.
 
-
 ### String encoding
 
 - len of str to bytes (number of bytes = 4 in this case)
@@ -190,6 +189,8 @@ public-key encryption method.
 
 
 ### nCr Computations
+
+- [Formulas](https://res.cloudinary.com/hzs6fpebu/image/upload/v1627045519/hqulgennh7ibvf5485ji.pdf)
 
 #### Binomial Coefficient
 
