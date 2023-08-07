@@ -2,6 +2,10 @@
 
 ## Coding
 
+### Array
+
+- if you number array elements 0 to R*C-1, then kth will be `matrix[k//C][k%C]`
+
 ### General
 
 - Increment while loop
