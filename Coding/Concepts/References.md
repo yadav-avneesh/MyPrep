@@ -45,6 +45,8 @@
 - [LC Solutions](https://walkccc.me/LeetCode/problems/0837/)
 - [LC Google Solutions](https://libaoj.in/LeetCode-Solutions/Google/)
 - [LC Coder - 1](https://leetcode.com/zlobspb/)
+- [LC Coder - 2](https://leetcode.com/hai_dee/)
+- [LC Coder - 2 Blog](https://www.geekzl.com/getting-good-at-leetcode.html)
 
 # DP-Problem-Patterns
 
