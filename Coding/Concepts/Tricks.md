@@ -2,11 +2,17 @@
 
 ## Coding
 
+### Array
+
+- if you number array elements 0 to R*C-1, then kth will be `matrix[k//C][k%C]`
+
 ### General
+
 - Increment while loop
 - Check corner cases
 
 ### Graph
+
 - Check if all nodes covered.
   - [Valid Tree Problem](https://leetcode.com/problems/graph-valid-tree/)
   - Recall that a graph, G, is a tree iff the following two conditions are met:
@@ -14,14 +20,20 @@
       is a path between them. => [len(edges) == n-1]
     - G contains no cycles. In other words, there is exactly one path between
       each pair of nodes in G.
-   - Approaches
-     - DFS --> To find connectivity and check for cycle by keeping track of
+    - Approaches
+      - DFS --> To find connectivity and check for cycle by keeping track of
        visited.
-     - Can use BFS too
-     - Union Find
+      - Can use BFS too
+      - Union Find
+- Tree
+  - Depth / Height => Use one over the other as per problem
+- [Euler Tour](https://www.geeksforgeeks.org/euler-tour-tree/)
+  - Useful for subtree range queries.
 
 ### String encoding
+
 - len of str to bytes (number of bytes = 4 in this case)
+
 ```python
     def len_to_str(x):
         """
@@ -53,6 +65,7 @@
 Now as explained in the 2 point. The python solution line 6 we take the whole
 length of the string (len(str)) - we have to encode that into
 [8bits, 8 bits, 8bits, 8bits] example:
+
 - lets say our total length is 291 ( in binary its bin(291) = '0b100100011')
 - what you have to do now ? we grab the right most 8 bits - how do you grab
   right most 8 bits ?
@@ -67,16 +80,12 @@ length of the string (len(str)) - we have to encode that into
 - Once you compute all the 8bits we need to convert to char hence its
   [chr((x >> (i * 8)) & 0xff) for i in range(4)]
 
-
-
-# Tricks
-## Math Ones
-
 ### GCD
 
 #### Euclidean Algorithm
 
 ##### What?
+
 - If we subtract a smaller number from a larger one (we reduce a larger number),
 GCD doesn’t change. So if we keep subtracting repeatedly the larger of two, we
 end up with GCD.
@@ -84,6 +93,7 @@ end up with GCD.
     when we find the remainder 0.
 
 ##### Code
+
 ```python
 # TC = O(log(min(a, b)))
 def gcd(x, y):
@@ -94,11 +104,13 @@ def gcd(x, y):
 
 #### Extended Euclidean Algorightm:
 
-##### What?
+##### What of Extended Eu Algo?
+
 Extended Euclidean algorithm also finds integer coefficients x and y such
 that: ax + by = gcd(a, b)
 
 Examples:
+
 - Input: a = 30, b = 20
   - Output: gcd = 10, x = 1, y = -1
   - (Note that 30*1 + 20*(-1) = 10)
@@ -144,7 +156,8 @@ x = y1 – ⌊b/a⌋ * x1
 y = x1
 ```
 
-##### Code
+##### Code for extended Eu Algo
+
 ```python
 # TC = O(logN)
 
@@ -171,6 +184,7 @@ print("gcd(", a, ",", b, ") = ", g)
 ```
 
 ##### Application
+
 The extended Euclidean algorithm is particularly useful when a and b are coprime
 (or gcd is 1). Since x is the modular multiplicative inverse of “a modulo b”,
 and y is the modular multiplicative inverse of “b modulo a”. In particular, the
@@ -179,6 +193,8 @@ public-key encryption method.
 
 
 ### nCr Computations
+
+- [Formulas](https://res.cloudinary.com/hzs6fpebu/image/upload/v1627045519/hqulgennh7ibvf5485ji.pdf)
 
 #### Binomial Coefficient
 
@@ -190,6 +206,7 @@ order, that k objects can be chosen from among n objects more formally, the
 number of k-element subsets (or k-combinations) of a n-element set.
 
 ##### The Problem
+
 Write a function that takes two parameters n and k and returns the value of
 Binomial Coefficient C(n, k). For example, your function should return 6 for
 n = 4 and k = 2, and it should return 10 for n = 5 and k = 2.
