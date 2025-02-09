@@ -1,6 +1,6 @@
 As a man thinketh in his heart, so is he. -- James Allen
 
-Mind is the master power that moulds and makes; And man is mind,
+Mind is the master power that shapes and makes; And man is mind,
 and evermore he takes the Tool of thought, and, shaping what he
 wills, Bring forth a thousand joys, a thousand ills; He thinks
 in secret, and it comes to pass, Environment is but his looking-glass.
