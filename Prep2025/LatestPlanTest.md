@@ -1,4 +1,4 @@
-# System Design for Senior/Staff Engineers - FAANG Scale
+# System Design
 
 ## Table of Contents
 1. [Core Principles & Fundamentals](#core-principles--fundamentals)
